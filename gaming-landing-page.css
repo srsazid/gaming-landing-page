@@ -12,6 +12,10 @@ body {
 }
 
 /* header section */
+header {
+   background-color: skyblue;
+}
+
 nav {
    display: flex;
    justify-content: space-evenly;
@@ -30,7 +34,7 @@ nav {
 }
 
 .main-logo .amerspan {
-   color: #0B0223;
+   color: #ffffff;
    font-size: 45px;
    font-style: normal;
    font-weight: 700;
@@ -161,7 +165,7 @@ nav li {
 }
 
 .banner2 img {
-   width: 550px;
+   width: 90%;
 }
 
 .banner2title {}
@@ -202,7 +206,7 @@ nav li {
 .four-card-title {
    text-align: center;
    color: #0B0223;
-   font-size: 48px;
+   font-size: 2.8rem;
    font-weight: 700;
 }
 
@@ -223,6 +227,22 @@ nav li {
 }
 
 /* banner 3 */
+.banner3prymeryimg {
+   display: flex;
+   align-items: center;
+   width: 500px;
+   height: 600px;
+}
+
+.banner3-img .over-right-img {
+   display: flex;
+   width: 250px;
+   /* height: 70px; */
+   position: relative;
+   bottom: 200px;
+   right: 100px;
+}
+
 .banner-three {
    display: flex;
    justify-content: space-evenly;
@@ -230,9 +250,9 @@ nav li {
 }
 
 .banner3title {
-   width: 400px;
+
    text-align: right;
-   font-size: 3rem;
+   font-size: 2.7rem;
    font-weight: 700;
    line-height: 3.75rem;
 }
@@ -270,22 +290,66 @@ nav li {
 
 .cards-four-div {
    display: flex;
-   justify-content: center ;
+   justify-content: center;
    align-items: center;
    padding: 5px;
 
 
-  
+
 }
 
-.cards-four-div:hover{
+.cards-four-div:hover {
    border: 2px solid #F948B2;
    border-radius: 50px;
    color: #FF42A5;
 }
 
+/* footer section */
+footer {
+   background: #0B0223;
+   text-align: center;
+   padding: 75px;
 
+}
 
+.footertitles {
+   color: #FFFFFF;
+   display: inline-flex;
+   padding: 0.625rem;
+   align-items: flex-start;
+   gap: 3.75rem;
+   margin-top: 50px;
+}
+
+.footericons {
+   display: flex;
+   justify-content: center;
+   color: #fff;
+   gap: 30px;
+   margin-top: 20px;
+}
+
+.footerparagrap {
+   display: flex;
+   justify-content: center;
+   color: rgba(255, 255, 255, 0.60);
+   text-align: center;
+   font-size: 1rem;
+   font-weight: 500;
+   gap: 30px;
+
+}
+.footercopyright{
+color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/* CSS END */
 
 /* for mobile devices */
 @media screen and (max-width: 576px) {
@@ -297,11 +361,16 @@ nav li {
    .banner1,
    .banner2,
    .banner3-img,
+   .banner-three,
    .banner2 img {
       flex-direction: column;
    }
-
-   .banner1 {
-      flex-direction: column-reverse;
+   .footertitles,
+   .footerparagrap {
+      line-height: normal;
+      justify-content: space-evenly;
+      flex-wrap: wrap ;
    }
 }
+
+/* THE END */
