@@ -163,9 +163,9 @@ nav li {
 .banner2 img {
    width: 550px;
 }
-.banner2title{
 
-}
+.banner2title {}
+
 .banner2title h3 {
    font-size: 40px;
    font-weight: 700;
@@ -253,11 +253,36 @@ nav li {
    line-height: 1.875rem;
 }
 
-.banner-three img{
-   
+.banner-three img {
+
    width: 100%;
 }
 
+.cards-four {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   flex-wrap: wrap;
+   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+
+.cards-four-div {
+   display: flex;
+   justify-content: center ;
+   align-items: center;
+   padding: 5px;
+
+
+  
+}
+
+.cards-four-div:hover{
+   border: 2px solid #F948B2;
+   border-radius: 50px;
+   color: #FF42A5;
+}
 
 
 
@@ -272,11 +297,11 @@ nav li {
    .banner1,
    .banner2,
    .banner3-img,
-   .banner2 img  {
-   flex-direction: column;
-}
+   .banner2 img {
+      flex-direction: column;
+   }
 
-.banner1 {
-   flex-direction: column-reverse;
-}
+   .banner1 {
+      flex-direction: column-reverse;
+   }
 }
